@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag hoangsonhub/ddmsmse_ddm501:$(date +%s)
+      run: docker build . --file Dockerfile --tag hoangsonhub/ddmsmse_ddm501
+    - name: Login the Docker
+      run: docker login -u "hoangsonhub" -p "dckr_pat_SPTpVXQoVlELrnQbLDxStBmBcmU"
+    - name: Push the image Docker
+      run: docker push hoangsonhub/ddmsmse_ddm501
