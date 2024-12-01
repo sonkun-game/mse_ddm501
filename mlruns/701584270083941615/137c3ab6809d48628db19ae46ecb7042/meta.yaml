@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/701584270083941615/137c3ab6809d48628db19ae46ecb7042/artifacts
+deleted_time: 1733065567094
+end_time: null
+entry_point_name: ''
+experiment_id: '701584270083941615'
+lifecycle_stage: deleted
+run_id: 137c3ab6809d48628db19ae46ecb7042
+run_name: funny-fly-543
+run_uuid: 137c3ab6809d48628db19ae46ecb7042
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733065421301
+status: 1
+tags: []
+user_id: Son

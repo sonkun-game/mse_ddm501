@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MLflow Prediction</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f8ff;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                background-color: #ffffff;
+                padding: 20px; /* Add padding around the content */
+                padding-right: 20px; /* Ensure specific right padding */
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 300px;
+            }
+            h2 {
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            form label {
+                display: block;
+                margin: 10px 0 5px;
+                text-align: left;
+            }
+            form input {
+                width: calc(100% - 20px); /* Account for padding inside input */
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box; /* Include padding in width calculation */
+            }
+            form input[type="submit"] {
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            h3 {
+                color: #555555;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Nhập số liệu và dự đoán rủi ro khi cho vay</h2>
+            <form action="/predict" method="post">
+                <label for="age">Tuổi:</label>
+                <input type="number" id="age" name="age">
+                <label for="income">Thu nhập ($):</label>
+                <input type="number" id="income" name="income">
+                <label for="education_level">Trình độ học vấn:</label>
+                <input type="number" id="education_level" name="education_level">
+                <label for="years_experience">Kinh nghiệm làm việc:</label>
+                <input type="number" id="years_experience" name="years_experience">
+                <label for="credit_score">Điểm tín dụng:</label>
+                <input type="number" id="credit_score" name="credit_score">
+                <input type="submit" value="Dự đoán rủi ro">
+            </form>
+            {% if prediction_text %}
+                <h3>{{ prediction_text }}</h3>
+            {% endif %}
+        </div>
+    </body>
+</html>
+
+
