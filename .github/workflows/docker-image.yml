@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Test Global Variable
-      run: echo "${{DOCKER_HUB_TOKEN}}"
+      run: echo "$DOCKER_HUB_TOKEN"
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag hoangsonhub/ddmsmse_ddm501
     - name: Login the Docker
