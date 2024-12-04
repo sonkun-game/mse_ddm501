@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/701584270083941615/8c67ab55235849db9ff8c0023dbb57d3/artifacts
+deleted_time: 1733238955087
+end_time: null
+entry_point_name: ''
+experiment_id: '701584270083941615'
+lifecycle_stage: deleted
+run_id: 8c67ab55235849db9ff8c0023dbb57d3
+run_name: receptive-smelt-920
+run_uuid: 8c67ab55235849db9ff8c0023dbb57d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733065577945
+status: 1
+tags: []
+user_id: Son

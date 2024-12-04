@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/775920816541677085/1627ccf1ca68466c842c0abe0228f8bd/artifacts
+deleted_time: 1733329533083
+end_time: null
+entry_point_name: ''
+experiment_id: '775920816541677085'
+lifecycle_stage: deleted
+run_id: 1627ccf1ca68466c842c0abe0228f8bd
+run_name: lyrical-jay-733
+run_uuid: 1627ccf1ca68466c842c0abe0228f8bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733328488722
+status: 1
+tags: []
+user_id: Son

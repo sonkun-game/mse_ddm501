@@ -9,26 +9,27 @@ print('Auto generate datasets from make_classification... \n')
 
 # Tạo dữ liệu
 X, y = make_classification(
-    n_samples=1000,
-    n_features=5,
-    n_informative=3,
-    n_redundant=1,
-    n_repeated=0,
-    n_classes=2,
-    random_state=42
+    n_samples=1000, # 1000 mẫu dữ liệu
+    n_features=5, # mỗi mẫu sẽ có 4 đặc trưng
+    n_informative=3, # trong số 10 đặc trưng thì sẽ có 3 đặc trưng có thông tin hữu ích 
+    n_redundant=0, # Có 0 đặc trưng dư thừa,
+    n_repeated=0, # Không có đặc trưng nào lặp lại
+    n_classes=2, # Phân loại nhị phân
+    random_state=42 # Đảm bảo rằng việc tạo ra dữ liệu là ngẫu nhiên nhưng có thể tái lập được
 )
 
 # Đặt tên cho các feature
-feature_nm = ["age", "income", "education_level", "year_exp", "credit_score"]
+feature_nm = ["age", "education", "frequency", "platform","is_addicted"]
 data = pd.DataFrame(X, columns=feature_nm)
 data['target'] = y
 
-data['age'] = np.clip(data['age'],18,70).astype(int)
-data['income'] = np.clip(data['income'], 20000, 150000).astype(int)
-data['education_level'] = np.clip(data['education_level'], 0, 20).astype(int)
-data['year_exp'] = np.clip(data['year_exp'], 0, 40).astype(int)
-data['credit_score'] = np.clip(data['credit_score'], 300, 850).astype(int)
+data['age'] = np.clip(data['age'], 17, 70).astype(int)
+data['education'] = np.clip(data['education'], 1, 3).astype(int)
+data['frequency'] = np.clip(data['frequency'], 1, 24).astype(int)
+data['platform'] = np.clip(data['platform'], 0, 20).astype(int)
+data['is_addicted'] = np.clip(data['is_addicted'], 0, 1).astype(int)
+
 
 # Lưu thông tin vào file excel
-data.to_csv('data.csv',index=False)
+data.to_csv('analysis.csv',index=False)
 print(data.head())

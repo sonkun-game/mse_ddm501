@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/874181730175746611/14cdc7d458104b0abfeebd18bd63657a/artifacts
+deleted_time: 1733238952801
+end_time: null
+entry_point_name: ''
+experiment_id: '874181730175746611'
+lifecycle_stage: deleted
+run_id: 14cdc7d458104b0abfeebd18bd63657a
+run_name: gregarious-moth-603
+run_uuid: 14cdc7d458104b0abfeebd18bd63657a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733068390531
+status: 1
+tags: []
+user_id: Son

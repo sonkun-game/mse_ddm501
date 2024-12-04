@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MLflow Prediction</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #9dfab6;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                background-color: #fad6a0;
+                padding: 20px; /* Add padding around the content */
+                padding-right: 20px; /* Ensure specific right padding */
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 50%;
+            }
+            h2 {
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            form label {
+                display: block;
+                margin: 10px 0 5px;
+                text-align: left;
+            }
+            form input {
+                width: calc(100% - 20px); /* Account for padding inside input */
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box; /* Include padding in width calculation */
+            }
+            form input[type="submit"] {
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            h3 {
+                color: #555555;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Dự đoán rủi ro người sử dụng bị nghiện mạng xã hội </h2>
+            <form action="/predict" method="post">
+                <div style="display: flex;">
+                    <div style="width: 50%;">
+                        <label for="age">Tuổi:</label>
+                        <input type="number" id="age" name="age">
+                    </div>
+                    <div style="width: 50%;">
+                        <label for="education">Trình độ học vấn :</label>
+                        <input type="number" id="education" name="education">
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="width: 50%;">
+                        <label for="frequency">Thời gian sử dụng điện thoại trong 1 ngày :</label>
+                        <input type="number" id="frequency" name="frequency">
+                    </div>
+                    <div style="width: 50%;">
+                        <label for="platform">Số lượng nền tảng sử dụng:</label>
+                        <input type="number" id="platform" name="platform">
+                    </div>
+                </div>
+
+                <label for="is_addicted">Người dùng bị nghiện mạng xã hội không :</label>
+                <div style="display: flex; width: 50%;">
+                    <label for="yes">Có</label>
+                    <input style="width: 30px; padding-right: 50px;" type="radio" id="yes" name="is_addicted" value="1">
+                    <label for="no">Không</label>
+                    <input style="width: 30px;" type="radio" id="no" name="is_addicted" value="0">
+                </div>
+
+
+                <input type="submit" value="Dự đoán">
+            </form>
+
+            {% if prediction_text %}
+                <h3>{{ prediction_text }}</h3>
+            {% endif %}
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/760514522145456562/5666bfed457443ff8c77339ee950e800/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '760514522145456562'
+lifecycle_stage: active
+run_id: 5666bfed457443ff8c77339ee950e800
+run_name: traveling-seal-624
+run_uuid: 5666bfed457443ff8c77339ee950e800
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733241730409
+status: 1
+tags: []
+user_id: Son

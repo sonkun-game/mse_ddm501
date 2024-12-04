@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/775920816541677085
+creation_time: 1733243495102
+experiment_id: '775920816541677085'
+last_update_time: 1733243495102
+lifecycle_stage: active
+name: RandomizedSearchCV

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/828656602394004005/cecc626f746d47a2a714e5c482ee0526/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '828656602394004005'
+lifecycle_stage: active
+run_id: cecc626f746d47a2a714e5c482ee0526
+run_name: wise-ape-388
+run_uuid: cecc626f746d47a2a714e5c482ee0526
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733242319735
+status: 1
+tags: []
+user_id: Son

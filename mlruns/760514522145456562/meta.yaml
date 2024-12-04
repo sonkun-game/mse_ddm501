@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/760514522145456562
+creation_time: 1733241729634
+experiment_id: '760514522145456562'
+last_update_time: 1733241729634
+lifecycle_stage: active
+name: LogisticRegression

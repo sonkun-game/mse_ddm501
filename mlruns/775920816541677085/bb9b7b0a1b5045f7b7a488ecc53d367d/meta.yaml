@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/775920816541677085/bb9b7b0a1b5045f7b7a488ecc53d367d/artifacts
+deleted_time: 1733328438131
+end_time: null
+entry_point_name: ''
+experiment_id: '775920816541677085'
+lifecycle_stage: deleted
+run_id: bb9b7b0a1b5045f7b7a488ecc53d367d
+run_name: serious-sponge-616
+run_uuid: bb9b7b0a1b5045f7b7a488ecc53d367d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733243495406
+status: 1
+tags: []
+user_id: Son
