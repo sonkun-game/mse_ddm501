@@ -19,6 +19,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag hoangsonhub/ddmsmse_ddm501
     - name: Login the Docker
-      run: docker login -u "hoangsonhub" -p "dckr_pat_SPTpVXQoVlELrnQbLDxStBmBcmU"
+      run: docker login -u "hoangsonhub" -p "$DOCKERHUB_TOKEN"
     - name: Push the image Docker
       run: docker push hoangsonhub/ddmsmse_ddm501
